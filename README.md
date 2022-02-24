@@ -5,7 +5,7 @@ The starter code uses the Moment.js (https://momentjs.com/) library to work with
 
 
 WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+THEN the current day is displayed at the top of the calendar. DONE
 WHEN I scroll down
 THEN I am presented with time blocks for standard business hours
 THEN each time block is color-coded to indicate whether it is in the past, present, or future
@@ -45,4 +45,6 @@ How to Submit the Challenge
 You are required to submit BOTH of the following for review:
 The URL of the functional, deployed application.
 The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+
+
 
