@@ -1,0 +1,142 @@
+/* BODY STYLES  */
+body {
+  font-size: 15px;
+  line-height: 1;
+  background-color: #feffb8;
+}
+
+
+/* JUMBOTRON STYLES  */
+.jumbotron {
+  text-align: center;
+  background-color: #15314d;
+  color: black;
+  border-radius: 0;
+  border-bottom: 8px solid #000000;
+  padding: 40px;
+}
+
+.jumbotron h1 {
+  color: #00abfa;
+  font-weight: bold;
+}
+
+.lead{
+  color:white;
+}
+
+/* CURRENT TIME DISPLAY STYLES */
+#currentDay {
+  height:25px;
+  background-color: #3a102d;
+  font-size: 20px;
+  color:white;
+}
+
+
+
+/* BLOCK STYLES START */
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+}
+
+/* TIME section styles */
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* hour styles */
+.hour {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  background-color: #D5BB9A;
+  white-space: pre-wrap;
+  padding-right: 5px;
+  margin-right: 3px;
+}
+
+/* text area styles */
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #393a10;
+  background: transparent;
+  border: none;
+  resize: none;
+  border-left: 2px solid black;
+  padding: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #83c1b7;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow:  2px 3px #8783c1;
+}
+
+
+
+/*  SAVE button style */
+.saveBtn {
+  color: white;
+  background-color: #80633f;
+  border-top: 1px solid #393a10;
+  border-left: 1px solid #393a10;
+  border-radius: 15px;
+}
+
+.saveBtn:not(:hover) {
+  color: white;  
+  background-color:  #80633f;
+  transition: all 0.6s ease-in-out;
+}
+
+.saveBtn:hover {
+  color: #000000;  
+  background-color: #a5763e;
+  transition: all 0.6s ease-in-out;
+}
+
+
+/* relative time */
+.past {
+  background-color: #424242dc;
+  color: white;
+}
+.present {
+  background-color: #0ddf05fa;
+}
+
+.future {
+  background-color: #c4c0ab;
+  color: white;
+}
+
+
+/* MEDIA QUERY STYLES START */
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+
+  .saveBtn {
+    padding: 0;
+  }
+
+  /* SAVE BUTTON STYLES END */
+  .hour {
+
+    font-size: 10px;
+    padding-left: 1px;
+    margin-right: 3px;
+  }
+  .jumbotron h1{
+    font-size: 3rem;
+  }
+
+}
