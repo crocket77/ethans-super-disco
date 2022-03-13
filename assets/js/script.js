@@ -68,18 +68,22 @@ function populateContainer(){
     $(".container").empty();
     // loop to create time-blocks
     for (let i = 0; i < dayList.length; i++) {
-    // Creates a container row for the time-block elements
+    // Creates a container row for time-block elements
     const hourRow = $('<div class="row time-block mb-1"></div>');
-    // Creates and sizes the hour div, and gives it an id relating to it's actual time
+    // Creates hour div, and gives it an id relating to its time
     const hourId = $('<div class="hour col-2 p-3 col-lg-1 border"></div>').attr("id",dayList[i].time);
-    if(dayList[i].time<=12){
+    //div time variable
+    const hourNum = dayList[i].time
+    
+    //adjust for military time
+    if(hourNum<=12){
         hourId.text(dayList[i].time+":00"+dayList[i].half)
     }else if(dayList[i].time>12){
         hourId.text((dayList[i].time-12)+":00"+dayList[i].half)   
     }
+    //append the hourId
     $(hourRow).append(hourId)
-        // Convert the hour id to a number for comparison
-        const hourNum = dayList[i].time
+
         
         // Create and size the textarea element
         const textArea = $('<textarea class="col-8 col-lg-9 border-bottom"></textarea>');
